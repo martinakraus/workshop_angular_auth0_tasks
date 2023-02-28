@@ -14,15 +14,15 @@ We need now need to help Angular and Auth0 communicate using configuration data 
 
 Click on the "Settings" tab of your Auth0 Application page and fill in the following values:
 
-**Allowed Callback URL:** http://localhost:4200
+**Allowed Callback URL:** [http://localhost:4040/callback](http://localhost:4040/callback)
 
 After your users successfully log in, Auth0 can only redirect them to any of the URLs you list here.
 
-**Allowed Logout URL:** http://localhost:4200
+**Allowed Logout URL:** [http://localhost:4040](http://localhost:4040)
 
 After your users log out, Auth0 can only redirect them to any of the URLs you list here.
 
-**Allowed Web Origins:** http://localhost:4200
+**Allowed Web Origins:** [http://localhost:4040](http://localhost:4040)
 
 Using the Auth0 Angular SDK, your Angular application will make requests under the hood to an Auth0 URL to handle authentication requests. As such, you need to add your Angular application origin URL to avoid Cross-Origin Resource Sharing (CORS) issues.
 
@@ -33,5 +33,6 @@ Scroll down and click the "Save Changes" button.
 ### Install the Auth0 SDK 
 
 After you have successfully cloned the repo and installed all dependencies with `npm install`
+To install the Auth0 SDK you can do this through npm:
+`npm i @auth0/auth0-angular`
 
-// ToDo setenv.ts

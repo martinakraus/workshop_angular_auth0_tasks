@@ -45,6 +45,11 @@ handleLogout(): void {
 ```
 
 ```html
+// src/shared/components/buttons/logout-button/logout-button.component.html
+<button class="button__logout" (click)="handleLogout()">Log Out</button>
+```
+
+```html
 // src/app/shared/components/navigation/desktop/nav-bar.component.html
 
 <div class="nav-bar__buttons">

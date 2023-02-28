@@ -26,19 +26,14 @@ The Auth0-SDK already provides us some kind of `AuthHttpInterceptor` doing this 
       },
     }),
   ],
+  providers: [{
+    provide: HTTP_INTERCEPTORS,
+    useClass: AuthHttpInterceptor,
+    multi: true
+  }],
 
 ```
 
-### Update ProtectedComponent
-
-Having the interceptor applied we now want to test it with an protected API
-Let's add another `callSecureApi` Function inside the `ProtectedComponent`:
-
-```javascript
-
-```
-
-```html
 
 ```
 

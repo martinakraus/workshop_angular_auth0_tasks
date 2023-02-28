@@ -31,10 +31,10 @@ The Auth0-SDK already provides us some kind of `AuthHttpInterceptor` doing this 
     useClass: AuthHttpInterceptor,
     multi: true
   }],
+  ...
+ })
 
 ```
 
 
-```
-
-**After you have applied everything you should see a protected message returned from your running express backend**
+**After you have applied everything you should see in your network tab that the request to the protected API has a Authorization Header**

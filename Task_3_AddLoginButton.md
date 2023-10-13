@@ -30,7 +30,7 @@ import { Component, OnInit } from '@angular/core';
 import { AuthService } from '@auth0/auth0-angular';
 
 @Component({...})
-export class LoginButtonComponent implements OnInit {
+export class LoginButtonComponent {
   constructor(private readonly auth: AuthService) {}
 
 handleLogin(): void {
@@ -45,10 +45,4 @@ handleLogin(): void {
   Log in
 </button>
 
-<!-- src/app/shared/components/navigation/desktop/nav-bar-buttons.component.html
-<div class="nav-bar__buttons">
-    <app-login-button
-            *ngIf="(isAuthenticated$ | async) === false">
-    </app-login-button>
-</div>
-```n
+```

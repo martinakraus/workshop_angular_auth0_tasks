@@ -9,7 +9,7 @@ Create a .env file under the root project directory and populate it with the fol
 // .env
 AUTH0_DOMAIN=AUTH0-DOMAIN
 AUTH0_CLIENT_ID=AUTH0-CLIENT-ID
-AUTH0_CALLBACK_URL=http://localhost:4040/callback
+AUTH0_CALLBACK_URL=http://localhost:4040
 API_SERVER_URL=http://localhost:6060
 ```
 

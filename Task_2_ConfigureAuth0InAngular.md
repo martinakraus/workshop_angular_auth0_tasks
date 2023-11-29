@@ -26,7 +26,7 @@ API_SERVER_URL=http://localhost:6060
 
 // src/app/app.module.ts
 import { AuthModule } from '@auth0/auth0-angular';
-import { environment as env } from '../environments/environment';
+import { environment } from '../environments/environment';
 
 ...
 
@@ -39,6 +39,6 @@ import { environment as env } from '../environments/environment';
         SharedModule,
         // 👇 add and initialize AuthModule
         AuthModule.forRoot({
-            ...env.auth,
+            ...environment.auth0,
         }),
 ```

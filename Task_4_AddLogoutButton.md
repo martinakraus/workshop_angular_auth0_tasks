@@ -33,12 +33,11 @@ Again we need to update the `NavBarButtonsComponent` as well:
 })
 export class LogoutButtonComponent implements OnInit {
   constructor(
-    public auth: AuthService,
-    @Inject(DOCUMENT) private doc: Document
+    public auth: AuthService
   ) {}
 
 handleLogout(): void {
-    this.auth.logout({ logoutParams: { returnTo: this.doc.location.origin } });
+    this.auth.logout();
   }
 }
 
